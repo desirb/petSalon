@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <link src="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Oleo+Script:wght@700&family=Patrick+Hand&display=swap"rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="index.css">
+  <title>Spaw Day</title>
+</head>
+
+<body>
+<!-- background image -->
+  <div class="opacity">
+  </div>
+
+<!-- nav bar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <img class="pet-logo" src="https://image.flaticon.com/icons/svg/1499/1499544.svg" alt="">
+    <a class="navbar-brand" href="index.html"><p class="spaw-day">Spaw <br>&nbsp&nbsp&nbsp&nbsp Day</p></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto tabs">
+        <li class="nav-item tabs line">
+          <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item active tabs line-b">
+          <a class="nav-link" href="register.html">Reservations</a>
+        </li>
+      </ul>
+      <div class="form-inline my-2 my-lg-0">
+        <input id="searchPet" class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit" onclick="search();">Search</button>
+        </form>
+      </div>
+  </nav>
+
+<!-- card titles -->
+  <div class="card-deck">
+    <div class="card">
+      <img class="card-three"src="https://thumbor.forbes.com/thumbor/960x0/https%3A%2F%2Fblogs-images.forbes.com%2Fkeithflamer%2Ffiles%2F2019%2F01%2FE1D_2438-1200x801.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Consectetur Adipisicing</h5>
+        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, debitis, deserunt incidunt perspiciatis pariatur perferendis eius beatae officia obcaecati aliquam corrupti eum assumenda necessitatibus unde est numquam eveniet iure esse.</p>
+        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+      </div>
+    </div>
+    <div class="card">
+      <img class="card-two" src="https://img1.wsimg.com/isteam/stock/2739/:/rs=w:700,cg:true,m" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Tempore Ipsum</h5>
+        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem debitis fugiat harum temporibus voluptatibus qui praesentium dignissimos? Impedit, aut quos sit nisi quae est possimus officiis cumque deserunt ipsa dignissimos!</p>
+        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+      </div>
+    </div>
+    <div class="card">
+      <img class="card-three" src="https://dogtime.com/assets/uploads/2017/12/dog-grooming-mistakes-1-1280x720.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Soluta Autem Omnis</h5>
+        <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab culpa expedita nemo excepturi, atque odit sint. Illo aspernatur, quam magni error natus eveniet obcaecati fuga iusto minus voluptas doloremque cupiditate.</p>
+        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+      </div>
+    </div>
+  </div>
+
+<!-- other content one -->
+<div class="section-two">
+  <img src="https://lirp-cdn.multiscreensite.com/e6283e52/dms3rep/multi/opt/Dog+brushing+teeth-960w.jpg" alt="" srcset="">
+
+  <div class="section-one-text">
+    <h2 class="section-one-heading">Lorem Ipsum Dolor</h2>
+    <h4 class="section-one-sm-heading">Dignissimos fuga - $65</h4>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, tempore ipsum. Reiciendis soluta autem omnis totam provident sint dignissimos fuga nostrum? Ipsum assumenda culpa similique quaerat quae.</p>
+    <h4 class="section-one-sm-heading">Dignissimos fuga - $45</h4>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, tempore ipsum. Reiciendis soluta autem omnis totam provident sint dignissimos fuga nostrum? Ipsum assumenda culpa similique quaerat quae.</p>
+    <h4 class="section-one-sm-heading">Dignissimos fuga - $30</h4>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, tempore ipsum. Reiciendis soluta autem omnis totam provident sint dignissimos fuga nostrum? Ipsum assumenda culpa similique quaerat quae.</p>
+  </div>
+</div>
+
+<!-- other content two -->
+<div class="section-two">
+  <img class="section-two-image" src="https://petlifetoday.com/wp-content/uploads/2019/09/dog-grooming-scissors.jpg" alt="" srcset="">
+
+  <div class="section-two-text">
+    <h2 class="section-two-heading">Lorem Ipsum Dolor</h2>
+    <h4 class="section-two-sm-heading">Dignissimos fuga - $65</h4>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, tempore ipsum. Reiciendis soluta autem omnis totam provident sint dignissimos fuga nostrum? Ipsum assumenda culpa similique quaerat quae.</p>
+    <h4 class="section-two-sm-heading">Dignissimos fuga - $45</h4>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, tempore ipsum. Reiciendis soluta autem omnis totam provident sint dignissimos fuga nostrum? Ipsum assumenda culpa similique quaerat quae.</p>
+    <h4 class="section-two-sm-heading">Dignissimos fuga - $30</h4>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, tempore ipsum. Reiciendis soluta autem omnis totam provident sint dignissimos fuga nostrum? Ipsum assumenda culpa similique quaerat quae.</p>
+  </div>
+</div>
+
+
+
+<!-- footer -->
+  <footer id="footer-info">
+  </footer>
+
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>

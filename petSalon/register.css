@@ -1,0 +1,170 @@
+body {
+    position: relative;
+    font-family: 'Open Sans Condensed', sans-serif;
+    padding-bottom: 1rem;
+}
+  
+body::after {
+    content: "";
+    background: url("https://getdrawings.com/vectors/dog-grooming-vector-35.jpg");
+    opacity: 0.2;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;   
+}
+
+h1{
+    font-family: 'Oleo Script', cursive;
+    font-size: 4.5rem;
+    color: rgb(255, 47, 175);
+    text-shadow: 1px 1px 2px black; 
+    padding: 2rem;
+}
+
+h4{
+    font-family: 'Oleo Script', cursive;
+    font-size: 2rem;
+    font-weight: bolder;
+}
+
+h2{
+    color: rgb(255, 47, 175);
+    font-family: 'Oleo Script', cursive;
+    font-size: 2rem;
+    font-weight: bolder;
+}
+
+.service-header{
+    color: rgb(255, 47, 175);
+}
+
+.pet-header{
+    color: rgb(255, 47, 175);
+}
+
+.contact-header{
+    color: rgb(255, 47, 175);
+}
+
+.pet-info{
+    background-color: rgb(255, 255, 255);
+    padding: 2rem;
+    border: .2rem solid black;
+    border-radius: .2rem;
+    margin-bottom: 2rem;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+
+}
+
+.service-information{
+    background-color: rgb(255, 255, 255);
+    padding: 2rem;
+    border: .2rem solid black;
+    border-radius: .2rem;
+    margin-bottom: 2rem;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+p{
+    font-size: 1.2rem;
+}
+
+.contact-information{
+    background-color: rgb(255, 255, 255);
+    padding: 2rem;
+    border: .2rem solid black;
+    border-radius: .2rem;
+    margin-bottom: 2rem;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+label{
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+
+.button{
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    width: 9rem;
+    height: 2rem;
+    text-align: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+.button:hover{
+    font-weight: bolder;
+    background-color: greenyellow;
+    /* font-size: 1.5rem;
+    width: 11rem;
+    height: 3.5rem; */
+}
+
+
+
+.reservations{
+    background-color: rgb(255, 255, 255);
+    padding: 2.4rem;
+    border: .2rem solid black;
+    border-radius: .2rem;
+    margin-bottom: 10rem;
+    font-size: 1.2rem;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+th{
+    text-align: center;
+}
+
+.delete:hover{
+    font-weight: bolder;
+    background-color: rgb(255, 0, 0);
+}
+
+.social{
+    width: 3rem;
+    display: inline;
+    justify-content: center;
+}
+
+.tabs{
+    font-size: 1.8rem;
+    border-top: .5px solid lightgrey;
+    border-bottom: .5px solid lightgrey;
+    
+}
+
+.pet-logo{
+    width: 6rem;
+    margin-left: 5%;
+}
+
+.navbar-brand{
+    font-family: 'Oleo Script', cursive;
+    font-size: 3rem;
+    line-height: 1;
+    margin-right: 4%;
+}
+
+.spaw-day{
+    color: rgb(255, 47, 175);
+    text-shadow: 1px 1px 2px black; 
+    font-size: 3rem;
+}
+
+.line{
+    /* border-right: 1px solid lightgrey; */
+    padding-right: 2rem;
+    padding-left: 1rem;
+}
+
+.line-b{
+    padding-right: 1rem;
+}
+

@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css2?family=Oleo+Script:wght@700&family=Patrick+Hand&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="register.css">
+  <title>Reservations</title>
+</head>
+
+<body>
+<div class="opacity">
+  
+</div>
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <img class="pet-logo" src="https://image.flaticon.com/icons/svg/1499/1499544.svg" alt="">
+    <a class="navbar-brand" href="index.html"><p class="spaw-day">Spaw <br>&nbsp&nbsp&nbsp&nbsp Day</p></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto tabs">
+        <li class="nav-item tabs line">
+          <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item active tabs line-b">
+          <a class="nav-link" href="register.html">Reservations</a>
+        </li>
+      </ul>
+      <div class="form-inline my-2 my-lg-0">
+        <input id="searchPet" class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit" onclick="search();">Search</button>
+        </form>
+      </div>
+  </nav>
+
+  <h1 class="text-center">Reservations</h1>
+
+  <div class="container">
+    <form class="pet-info">
+      <h4 class="pet-header">Pet's Information</h4>
+      <div class="form-row">
+        <div class="form-group col-md-3">
+          <label for="petName">Name</label>
+          <input type="text" class="register-inputs form-control" id="petName">
+        </div>
+        <!-- <p>
+        <label for="petName"> Name: </label>
+        <input class="register-inputs" type="text" name="text" id="petName">
+        </p> -->
+
+        <div class="form-group col-md-3">
+          <label for="age">Age</label>
+          <input type="number" class="register-inputs form-control" id="petAge">
+        </div>
+        <!-- <p>
+       <label for="age">Age: </label>
+        <input class="register-inputs" type="number" name="age" id="petAge">
+        </p> -->
+
+        <div class="form-group col-md-3">
+          <label for="breed">Breed</label>
+          <input type="text" class="register-inputs form-control" id="petBreed">
+        </div>
+        <!-- <p>
+        <label for="breed">Breed: </label>
+        <input class="register-inputs" type="text" name="breed" id="petBreed">
+        </p> -->
+
+        <div class="form-group col-md-3">
+          <label for="weight">Weight in lbs</label>
+          <input type="number" class="register-inputs form-control" id="petWeight">
+        </div>
+        <!-- <p>
+        <label for="gender">Gender: </label>
+        <input class="register-inputs" type="text" name="gender" id="petGender">
+        </p> -->
+      </div>
+    </form>
+
+    <form class="service-information">
+      <h4 class="service-header">Service Information</h4>
+
+      <div class="form-row">
+        <div class="form-group col-md-3">
+          <label for="date">Date</label>
+          <input type="date" class="register-inputs form-control" id="petDate">
+        </div>
+
+        <div class="form-group col-md-3">
+          <label for="time">Time</label>
+          <select name="time" class="register-inputs form-control" id="petTime">
+            <option value="8:00 AM">8:00 AM</option>
+            <option value="9:00 AM">9:00 AM</option>
+            <option value="10:00 AM">10:00 AM</option>
+            <option value="11:00 AM">11:00 AM</option>
+            <option value="12:00 AM">12:00 PM</option>
+            <option value="1:00 PM">1:00 PM</option>
+            <option value="2:00 PM">2:00 PM</option>
+            <option value="3:00 PM">3:00 PM</option>
+            <option value="4:00 PM">4:00 PM</option>
+            <option value="5:00 PM">5:00 PM</option>
+            <option value="6:00 PM">6:00 PM</option>
+          </select>
+        </div>
+
+        <div class="form-group col-md-3">
+          <label for="grooming">Grooming Packages</label>
+          <select name="grooming" class="register-inputs form-control" id="petGrooming">
+            <option value="Not at this time">Not this time</option>
+            <option value="Luxury Groom">Luxury Groom</option>
+            <option value="Petite groom">Petite Groom</option>
+            <option value="Simple groom">Simple Groom</option>
+          </select>
+        </div>
+        <!-- <p>
+        <label for="service">Service: </label>
+        <select name="service" id="petService">
+        <option value="hair cut">Hair Cut</option>
+        <option value="nail trim">Nail Trim</option>
+        <option value="full service">Full Service</option>
+        </select>
+        </p> -->
+
+        <div class="form-group col-md-3">
+          <label for="spaws">Spaw Packages</label>
+          <select name="spaws" class="register-inputs form-control" id="petSpaws">
+            <option value="Not this time">Not this time</option>
+            <option value="Shoo Fly">Shoo Fly</option>
+            <option value="Pearly Whites">Pearly Whites</option>
+            <option value="Paw Heaven">Paw Heaven</option>
+            <option value="New Doggo, Who Dis">New Doggo, Who Dis</option>
+            <option value="Clean on the Inside">Clean on the Inside</option>
+            <option value="Shed No More">Shed No More</option>
+          </select>
+        </div>
+
+        <p>*All pets must have at minimum a Simple Groom in order to receive any Spaw Package.</p>
+      </div>
+    </form>
+
+
+    <form class="contact-information">
+      <h4 class="contact-header">Contact Information</h4>
+      <div class="form-row">
+        <div class="form-group col-md-4">
+          <label for="petName">First and Last Name</label>
+          <input type="text" class="register-inputs form-control" id="ownerName">
+        </div>
+        <!-- <p>
+      <label for="ownerName">Owner Name: </label>
+      <input class="register-inputs" type="text" name="ownerName" id="ownerName">
+    </p> -->
+
+
+        <div class="form-group col-md-4">
+          <label for="age">Phone Number</label>
+          <input type="tel" class="register-inputs form-control" id="contactPhone">
+        </div>
+        <!-- <p>
+      <label for="phome">Phone: </label>
+      <input class="register-inputs" type="tel" name="phone" id="contactPhone">
+    </p> -->
+
+        <div class="form-group col-md-4">
+          <label for="email">Email</label>
+          <input type="email" class="register-inputs form-control" id="contactEmail">
+        </div>
+      </div>
+  </div>
+  </form>  
+  
+  <input class="button" type="button" value="Make Appointment" onclick="register();">
+
+  <div class="container reservations">
+    <h2>Upcoming Reservations</h2>
+
+    <ul id="petList">
+      <!-- display the list items (li) -->
+    </ul>
+
+    <table class="table table-hover" id="petTable">
+      <tr>
+        <th>Date</th>
+        <th>Time</th>
+        <th>Name</th>
+        <th>Age</th>
+        <th>Breed</th>
+        <th>Weight</th>
+        <th>Grooming</th>
+        <th>Spaw</th>
+        <th>Owner</th>
+        <th>Phone</th>
+        <th>Email</th>
+        <th>Delete</th>
+      </tr>
+    </table>
+  </div>
+
+
+  <footer id="footer-info">
+  </footer>
+
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+  </script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+    integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous">
+  </script>
+  <script src="script.js"></script>
+</body>
+
+</html>
